@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengonversi Gambar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pengonversi Gambar</h1>
+
+        <!-- Profil Image Section -->
+        <section id="profile-section">
+            <h2>Siapkan Foto Profil</h2>
+            <input type="file" id="profile-upload" accept="image/*">
+            <button onclick="convertProfileImage()">Ubah Ukuran Profil</button>
+            <div id="profile-preview"></div>
+        </section>
+
+        <!-- Project Image Section -->
+        <section id="project-section">
+            <h2>Siapkan Gambar Proyek</h2>
+            <input type="file" id="project-upload" accept="image/*" multiple>
+            <button onclick="convertProjectImages()">Ubah Ukuran Proyek</button>
+            <div id="project-preview"></div>
+        </section>
+
+        <!-- Blog Image Section -->
+        <section id="blog-section">
+            <h2>Siapkan Gambar Blog</h2>
+            <input type="file" id="blog-upload" accept="image/*" multiple>
+            <button onclick="convertBlogImages()">Ubah Ukuran Blog</button>
+            <div id="blog-preview"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
